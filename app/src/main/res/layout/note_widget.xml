@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.NoteApp.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:theme="@style/Theme.NoteApp.AppWidgetContainer">
+
+    <ListView
+        android:id="@+id/notes_widget_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@null"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:clipToPadding="false"
+        android:descendantFocusability="blocksDescendants"
+        android:drawSelectorOnTop="true" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/white"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="nonotesavailable"
+        android:textSize="20sp" />
+
+</RelativeLayout>

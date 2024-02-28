@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F4F2F2"
+    tools:context=".Fragment.TaskFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchtask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_background"
+                    android:focusable="false"
+                    app:iconifiedByDefault="false"
+                    app:queryHint="Tìm kiếm"
+                    app:searchHintIcon="@null"
+                    app:searchIcon="@drawable/search" />
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_task"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:clipToPadding="false"
+                android:padding="5dp"
+                android:transitionGroup="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/addtask"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:onClick="buttonPopupwindow"
+            android:src="@drawable/add" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

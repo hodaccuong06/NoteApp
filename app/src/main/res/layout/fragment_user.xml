@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Fragment.UserFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#96C5B6"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageUser"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/iconsuser"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/NameUser"
+                    android:layout_width="285dp"
+                    android:layout_height="35dp"
+                    android:text="Name"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageUser"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageUser"
+                    app:layout_constraintTop_toTopOf="@+id/imageUser" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/thietlaptaikhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@color/white"
+                android:drawablePadding="10dp"
+                android:duplicateParentState="false"
+                android:padding="10dp"
+                android:text="Thiết lập tài khoản"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.079"
+                app:layout_constraintStart_toStartOf="@+id/scrollView2"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:text="Các ghi chú ẩn"
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dangxuat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:text="Đăng Xuất"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="143dp"
+                tools:layout_editor_absoluteY="286dp"
+                tools:textAlignment="center" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</FrameLayout>

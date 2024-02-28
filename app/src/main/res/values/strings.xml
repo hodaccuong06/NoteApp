@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chamenter">Chạm Enter để tạo tác vụ con</string>
+    <string name="delete_confirmation">Xác nhận</string>
+    <string name="sureToDelete">Bạn có chắc chắn muốn xóa nhiệm vụ này không</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="confirmation">Hoàn thành nhiệm vụ..</string>
+    <string name="sureToMarkAsComplete">Bạn có chắc chắn muốn đánh dấu nhiệm vụ này là đã hoàn thành.</string>
+    <string name="congrats_you_have_completed_the_task_successfully">Rất tốt... Bạn đã hoàn thành nhiệm vụ thành công..</string>
+    <string name="block_confirmation">Xác nhận</string>
+    <string name="sureToBlock">Bạn có muốn khóa ghi chú này không</string>
+    <string name="sureToUnBlock">Bạn có muốn mở khóa ghi chú này không</string>
+    <string name="deletenote">Bạn có chắc chắn muốn xóa ghi chú này không</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+</resources>
